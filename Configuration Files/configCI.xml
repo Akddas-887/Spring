@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+    <bean class="com.demo.demo.ci.Person" name="person">
+        <constructor-arg value="Ankush" />
+        <constructor-arg value="12" type="int"/>
+        <constructor-arg ref="certi"/>
+    </bean>
+
+    <bean class="com.demo.demo.ci.Certi" name="certi">
+        <constructor-arg value="Java"/>
+    </bean>
+
+    <bean class="com.demo.demo.ci.Addition" name="add">
+        <constructor-arg value="12"/>
+        <constructor-arg value="12"/>
+    </bean>
+</beans>
